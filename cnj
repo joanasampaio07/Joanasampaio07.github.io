@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atos Normativos - Portal Conselho Nacional</title>
+  <meta name="descripition" content="Atos Ad Referendum , Atos da Presidência, Atos Resolutórios, Resoluções, Resolução Ad Referendum">
+  <link rel="canonical" href="https://sesiconselhonacional.sharepoint.com/sites/PortalNormativos/Documentos%20Normativos/Forms/AllItems.aspx?ovuser=db4abf62%2D71bb%2D4a4e%2Db29e%2Dcef4f7eb1250%2Cjoana%2Esampaio%40cnsesi%2Ecom%2Ebr&OR=Teams%2DHL&CT=1709152820271&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDAyMDIwNTUxMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D/>
+  <meta property="og:title" content="Atos Normativos - Portal Conselho Nacional">
+  </head>
+<body>
+    <li class ="trail-item trail end"></li>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Atos Normativos</h1>
+                <p>Sistema de pesquisa de Atos Normativos do Conselho Nacional do Sesi tais como Atos Ad Referendum, Resoluções, Atos Da Presidência, Atos Resolutórios, Resoluções Ad Referendum. </p>
+                <p>A ferramenta permite a pesquisa por número, ano, origem e situação da publicação, bem como por argumento (palavra-chave) ou tema. Não é necessário preencher todos os campos. É indiferente a utilização de maiúsculas, minúsculas e acentos.</p>
+                <p>As informações disponíveis no sistema de Atos Normativos têm caráter, exclusivamente, informativo. </p>
+            </div>
+        </div>
+        <form action="/atos" method="POST">
+            <div id="formPesquisaAtos">
+                <div id="formPesquisaAtosTitulo">Pesquisa</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="tipoAto21" name="tipoAto[]" value="21">
+              <label class="form-check-label" for="tipoAto21">Atos Ad Referendum</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="tipoAto8" name="tipoAto[]" value="8">
+              <label class="form-check-label" for="tipoAto8">Atos da Presidência</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="tipoAto9" name="tipoAto[]" value="9">
+              <label class="form-check-label" for="tipoAto9">Atos Resolutórios</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="tipoAto20" name="tipoAto[]" value="20">
+              <label class="form-check-label" for="tipoAto20">Resoluções</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="tipoAto7" name="tipoAto[]" value="7">
+              <label class="form-check-label" for="tipoAto7">Resolução Ad Referendum</label>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+          <div class="col-md-1">
+            <input type="text" class="form-control" id="inputCity" placeholder="Número" name="numero">
+          </div>
+          <div class="col-md-1">
+            <input type="text" maxlength="10" class="form-control" id="inputZip" placeholder="Ano" name="ano">
+          </div>
+          <div class="col-md-2">
+            <select id="inputState" class="form-control" name="origem">
+              <option value="" selected>Origem</option>
+              <option value="7">Atos Ad Referendum</option>
+              <option value="8">Atos Da Presidência</option>
+              <option value="9">Atos Resolutórios</option>
+              <option value="6">Resoluções</option>
+              <option value="10">Resolução Ad Referendum</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select id="inputState" class="form-control" name="situacao">
+              <option value="" selected>Situação</option>
+              <option value="3">Alterado</option>
+              <option value="9">Exaurido</option>
+              <option value="5">Revogado</option>
+              <option value="8">Revogado parcialmente</option>
+              <option value="7">Sem efeito</option>
+              <option value="6">Suspenso</option>
+              <option value="4">Vigente</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <input type="submit" value="Pesquisar" class="btnPesquisarAtos" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </form>
+  <br>
+  <table class="table">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tipo</th>
+      <th scope="col">Número</th>
+      <th scope="col">Data</th>
+      <th scope="col">Origem</th>
+      <th scope="col">Situação</th>
+    </tr>
+  </thead>
+  <tbody> 
+      </tbody>
+</table>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+             
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas da tabela aqui -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+<div class="row justify-content-sm-center">
+      <div class="col-sm-3">&nbsp;</div>
+        <div class="col-md-auto"></div>
+      <div class="col-sm-3">&nbsp;</div>
+  </div>
+</form></body></html>
+    <thead>
+      <tr>
+        <svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+        <div id="rybena-sidebar" class="ryb-final">
+              <div class="options ryb-final">
+                
+                <button class="btn-rybena-sign-language ryb-final" style="display: flex;">
+                  <img class="ryb-final" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO8SURBVHgBxZdrqE1bFMfHvlxXLhe5bh25HCkiOqHknTzyKMkHfJFH3oqDDlI6HkUeUSQhJYQPnvHB+y3PvF85KUeSD8pzKx2c6TeaY2edddY+Z78c//rt2Vp7jjHHmnPMucYSyYGcc7vgKTSS3ykCmOp+qp/8LjH4AIgHgumZhm1r+FtyIRwtgO+BQK6nYNMIRsN9s7ki2QgHdWGnqygNqkMVNl1gDbwL2e2TTIVxfX0aV1lzIvrWhkFwDspD/TWo+fCHZCqM90cEUmz/6RIMgVlwNJRLwSBWuWx3HQ7muWidghJXMX+iglgCjZP4jkmqonNH+ObSlwa4DhomBoU2MMKCOwFvre/p2lUEkEfTBTrDJKgl6UsTdC9Mxp/6GghNkvTNiwUG18GmQ6EZNJbU5CAWupbQvWQqhQtwFM4EZ2YXvIbRMBPGhZy60IBvIQ5f4RXchUPQH4olWur/CDyBY7FYrKRSD2alEDaH7nWD585vy3Jb26XQG+onGUztDrqKyayH41BoIdVIE6oBrZ6E3Yj0c4RzzZkv/Pe4Kkf060szD4ZIxSVaB/fgDXyC9+Jn9SM+42En42GlZCDsFsJ2eOQqH2yp7rZXcNLp2cPPIWglaUptnD/YMgkiSn11mR4yXR0kA2GbT7MExopP6uDxXio+kTXB60Bd+BP+En9M1LHr73CTGI5LWVnZI8lSBFXg/KuiPICqxJZgGQyG1tU5emBPmLXUD6yHZxGBJfQCxiRzoG/WJ7AJmkiOhK9eMAMuWKIGg9tTnfE0uA49JEM5X731hOYR/2lNMxfuulTe2jbNd6pd22jbBvDB+eL8ls32XpsdDbCp9TsAfaJ8xCKcjqTpTnbPlfQDWkvTCQ7DGdAaV+tiHVxnQ3fUNXzPSdVhLbimuSRpiP71rP0PJsINWAHNJBvZcumOKE6x/zZ4qTMD/9o9LTunWFCLE8tUlSJrUKaxlKYd1MPJ4RS2/gM4C89BS85VtM3xs1X8Mr0DPW8KJRvhYCBcgqLg/Xg8vsBmpJn108ptj/O18HhLYL0usP8b2hlUJNnI+XJxJVxNzBLtbPhoOydxT7fuTWhp17qLtKR4DKNsZ22QXMj5Wlg/VYbZtT7pbgtogN0ba4PnB+w0B1c7/4bPl1wJZ//b0y+2a12KLc6XEUV2rz1c1FZ+tSwvzjtfz+iH3W0YDhthmfVpazNWIDUhBjpi2zbPlu8fS+TLmjfOf5acl5qQnSU7bEZOJY55578s9T13FpZLTYoBJ8Ci0L2m0FXS0A/Ap1pB6G+/mgAAAABJRU5ErkJggg==" alt="Botão Rybená LIBRAS">
+                  <div class="ryb-label ryb-final">
+                    <span class="ryb-final">Libras</span>
+                    <div class="ryb-line ryb-final"></div>
+                  </div>
+                </button>
+                <button class="btn-rybena-voice ryb-final"> 
+                    <img class="ryb-final" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgBxVdNSBVRGP1ePYog0AfRD4VNSEW0qKBFGJYRBBGR0KJl+Ai3GRRSkTxbWBBEQasg3j7oD2rVzysICoKsIHPTMw03hvrcSFk2ncucwa9xnm+8jtwDh885c+69Z96db7iKWMD3/WZwDOyQFLFE7HAQzIGbJEXYhtnKWpYUYRtmLetHSRG2YX6wrpcUYRvmK2uzuAa6aL8fYALcLq6BEM8Z6JG4BkI0gJMM1CKugRCXGaYMLhWXQIA6cICBzotrIMQxhhkH14hrIESJge6IK2DxevAkWPRnsKrGmDfgZzAnaQGTHeHWaAwkGFem95WkBfXivgZvg2eSPC08HjjEsZ2yULCLDKYSeK+Ab00IpR1WL/06WSjUFnk1fM/CbQGXKf0F9R5JIUwvJztRw2e2ZZjei0pvUb/OCrEIYLqnQ7WyQWvEcxx8CG5UWiu9wxHvCPW9Mh9gwDWwokKYJ7oe43vA+yWlZdS27lF6kdppSQo/OICHKPlB59RX8TaohbfELHxKaeeoFc110sNVH/iXf3vgYCaTqcQZoQ+hPOXlLnXruxofIjwxZhOHwQKjKLvBb5zsHp7m6hxDwuPoqNKWs04qLewuP3EYBupFaQQLlDoRaHXUBy2P0gT+Bt+rWztZ+2R26Mq8wjCQ2arwyQZl5mfWOMpagH+MAT2UQ9Q/KO8+1pdiA0zcz5cuX+X+BvBARLvBMfeVlgOnqDeKDVR7ewn97aoTtyk9T+1dqGVjBpsPkNnfleBP8Bc4LcFLthmsA/9I/BbFoZ21G9v2hWuYz8Il6rekylNc8JOhIAkBbxPYFtFucp7/jhwZZTD/P/fz8q4EbWza0bRflt4J8AmesCSWwDpdKN283IG5PsWZivpruFjA/NNc52w1g6e2wJNFhB8cU9vmMvQwyGNxiPCjNwKOg13iEP8A9EL4pzO+srIAAAAASUVORK5CYII=" alt="Botão Rybená LIBRAS">
+                    <div class="ryb-label ryb-final">
+                       <span class="ryb-final">Voz</span>
+                        <div class="ryb-line ryb-final"></div>
+                    </div>
+                </button>
+                <button class="btn-rybena-vision ryb-final"> 
+                    <img class="ryb-final" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM8SURBVHgB7ZdNSFRRFMfvLNoU6ChUCwsMaeGigtJKCtSwTX60UVvVFLUupIIWhlL7NkFRm4gg7IuKalFYtlCMNn1ZVlojERWYStDoJj39D++85syd++bDCd/GP/x48+4799z/O/e++94Ys6gsIqIicATUmrAFEx3kKQHqTZiCgc3gNyXVZMIUDLQpQ1yhdrOAitgNMNCIw305nQF7IpHIPStmLQ67wDpQCkrAHBgDz0A/+gyb/yE2ZE1ZM4iCE+At5abPIAZWm0IlU+ZrGkw5BvwFRkE/eClTaysOjplCxUkcyXnQLlAR0Gc9eVvEJ4epSpOv0CkCusmt1jzyxBymunLtzwl4bVyzEtwGc/Kb11KdxHEFroA+iYmBZY6cR618N0FxNiMrwAurtHFpO0Cpi9q1hvw+ux25K+SaryFQFmSkDHxUwTPgA6gB42LokGWINSmViVvtjY4xloOHKmY0zRAaSij9kW2gZGW2gjHwzhqUn55mlecgeU8YiysXdRji9Xhe5XiTEoeTXnWxR5molyObaBZDLrWrXDtV+2ETvCQuqrgnfuMp1fgHvJdKxIU6McGVexxghivUpAaakParGcxwhW6oHJ3cOCkns6BWDAyDLcqQ355J/wyRt4ZYfSaDcL1cxmVNcEOnSngdrKHk1NQpQzsouyFWu4q7lcXMXdXvtN/4SDVeEEP+1FQrQ2coP8UyGDmr4nr1hSil3jWvdn9f4P2gSn5PUu7i+KUOE0vAJRXHM1BiB/E+M6qC7pC3kL+Q9/htotymyRfvR63WGKVgUMXwvrYqqHRsaMi6uwYx9ApspKSh2QATU5ahWsldSak3wy/clSbLoiom792hdU4SvVaGfoCTaoCn4Dt4TunfQ5ct8/zui5pcRcFvba7QBjHB07odfJM7rZHKDIB9lHy5anWb+chRWl3iFko+ZdvkOAL2SsxPR7/jplBxEsq8eL8GDE5SqWl13mgKFXm75X5K/1gKEj8I/M3M20aLak8EGYqYeYi8z8cqwH/2yiXPFBgHg2AA/w5GrD78du8B/t7ThJgHJiyR96pIqAq1mTAlhvSUVZswRd53kr8PdZiwRd4XAX/QF5lFZdFftt33J/Oku5UAAAAASUVORK5CYII=" alt="Botão Rybená LIBRAS">
+                    <div class="ryb-label ryb-final">
+                       <span class="ryb-final">+ Acessibilidade</span>
+                        <div class="ryb-line ryb-final"></div> 
+                    </div>
+                </button>
+              </div>
+              <div class="loading ryb-final">
+                
+                <div class="lds-ring ryb-final">
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+                <div id="footer-inner" class="clr">
+                    <div id="footer-widgets" class="oceanwp-row clr">
+                        <div class="footer-widgets-inner container">
+                            <div class="footer-box span_1_of_4 col col-1">
+                                <div id="custom_html-2" class="widget_text footer-widget widget_custom_html clr">
+                                    <div class="textwidget custom-html-widget">
+                                        <img style="max-width:234px" src="/wp-content/uploads/2023/09/logo-cnj-portal-20-09.svg"/>
+                                    </div>
+                                </div>
+                            </div>
+            <div class="footer-box span_1_of_4 col col-2">
+                <div id="block-4" class="footer-widget widget_block clr">
+                    <div>
+                        <p style="margin: 0;">Setor Bancário Norte, Quadra 01 , Bloco I, Ed. Armando Monteiro Neto 6º e 7º andares . Asa Norte, Brasília-DF .
+</p>
+                        <p style="margin: 0;">CEP: 70040-913 </p>
+                      <p style="margin: 0;"> <br>Telefone (61) 3217-0715
+
+                      
+                        <p style="margin: 0;">Para dúvidas relacionadas a privacidade de dados, envie um email para :lgpd.cnsesi@cnsesi.com.br
+</p>
+                        <p style="margin: 0;">
+                            <a href="/politica-de-privacidade" rel="alternate">
+                               
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- .footer-one-box -->
+            <div class="footer-box span_1_of_4 col col-4">
+                <div id="custom_html-5" class="widget_text footer-widget widget_custom_html clr">
+                    <div class="textwidget custom-html-widget">
+                        <div>
+                            <br>
+                            <center>
+                                <img class="w3c" src="https://www.w3.org/Icons/valid-xhtml10" alt="W3C Válido">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .footer-box -->
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- #footer-widgets -->
+</div>
+<!-- #footer-inner -->
+</footer>
+<!-- #footer -->
+</div>
+<!-- #wrap -->
+</div>
